@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class Review {
     private ObjectId id;
-    private String body;
+    private String reviewBody;
 
     public Review(String reviewBody) {
-        this.body = reviewBody;
+        this.reviewBody = reviewBody;
     }
 
     public ObjectId getId() {
@@ -25,10 +25,10 @@ public class Review {
     }
 
     public String getBody() {
-        return body;
+        return reviewBody;
     }
 
     public void setBody(String body) {
-        this.body = body;
+        this.reviewBody = body;
     }
 }
